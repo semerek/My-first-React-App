@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './Column.scss';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 class Columnn extends React.Component {
 
-    static PropTypes = {
-        title: PropTypes.node.isRequired,
+    static propTypes = {
+        title: propTypes.node.isRequired,
     }
     render() {
         return (

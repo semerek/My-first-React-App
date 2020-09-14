@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './List.scss';
 import Hero from '../Hero/Hero.js';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import Column from '../Column/Column.js'
 import { settings } from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
@@ -12,10 +12,10 @@ class List extends React.Component {
   state = {
     columns: this.props.columns || [],
   }
-  static PropTypes = {
-    title: PropTypes.node.isRequired,
-    description: PropTypes.node,
-    columns: PropTypes.array,
+  static propTypes = {
+    title: propTypes.node.isRequired,
+    description: propTypes.node,
+    columns: propTypes.array,
   }
   static defaultProps = {
     description: settings.defaultListDescription,

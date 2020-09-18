@@ -1,7 +1,7 @@
 import shortid from 'shortid';
 
 // wybieranie cards z danej kolumny
-export const getCardsForList = ({cards}, cardId) => cards.filter(card => card.listId == cardId);
+export const getCardsForColumn = ({cards}, cardId, searchString) => cards.filter(card => card.listId == cardId && new RegExp(searchString, 'i').test(card.title));
 
 // tworzenie nazw akcji
 const reducerName = 'cards';

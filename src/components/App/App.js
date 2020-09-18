@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './App.scss';
 import propTypes from 'prop-types';
 import List from '../List/ListContainer.js';
+import SearchContainer from '../Search/SearchContainer.js';
 
 class App extends React.Component {
 
@@ -19,6 +20,7 @@ class App extends React.Component {
         {lists.map(listData => (
           <List key={listData.id} {...listData} />
         ))}
+        <SearchContainer />
       </main>
 
     );

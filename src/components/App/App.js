@@ -15,12 +15,12 @@ class App extends React.Component {
     const {title, subtitle, lists} = this.props;
     return (
       <main className={styles.component}>
+        <SearchContainer />
         <h1 className={styles.title}>{title}</h1>
         <h2 className={styles.subtitle}>{subtitle}</h2>
         {lists.map(listData => (
           <List key={listData.id} {...listData} />
         ))}
-        <SearchContainer />
       </main>
 
     );

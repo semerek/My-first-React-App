@@ -1,0 +1,15 @@
+@import '../../styles/settings.scss';
+
+.component {
+    background: $color-light;
+    margin: $base-size;
+    padding: $base-size;
+    border-radius: $radius;
+    color: $color-dark;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    margin: 0 0 ($base-size * 1.5) 0;
+}
